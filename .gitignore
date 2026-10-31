@@ -1,0 +1,42 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Build and package artifacts
+build/
+dist/
+*.egg-info/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# dbt-generated artifacts
+dbt_electricity/target/
+dbt_electricity/logs/
+dbt_electricity/dbt_packages/
+
+# Local data, logs, and database volumes
+data/raw/
+logs/
+postgres_data/
+
+# Tableau and operating-system local files
+*.hyper
+.DS_Store
+data/
+exports/
+*.duckdb
+*.duckdb.wal
+
